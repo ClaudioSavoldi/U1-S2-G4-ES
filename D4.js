@@ -82,7 +82,7 @@ function epify(stringa) {
   if (typeof stringa !== "string") {
     return "errore, inserisci una stringa";
   }
-  if (stringa.startsWith("EPICODE")) {
+  if (stringa.toUpperCase().startsWith("EPICODE")) {
     return stringEpic;
   } else {
     stringEpic = "EPICODE" + " " + stringEpic;
@@ -90,7 +90,7 @@ function epify(stringa) {
   }
 }
 console.log(epify("IS BETTER"));
-console.log(epify("EPICODE È FANTASTICO"));
+console.log(epify("epicode È FANTASTICO"));
 console.log(epify(23));
 
 console.log("-------------------------------------------------------Esercizio6");
